@@ -1,11 +1,17 @@
-# Text-Word-Counter
-Script that counts how many times a certain word appears in an E-Book.
-![ebook](https://github.com/efipaka/Text-Word-Counter/blob/master/online_library@2x.png)
+# Original Text-Word-Counter
 
----
+This is the original Python ebook counter, preserved from the repository's November 2020 commits. It counts words per line and occurrences of `Dorian` in the included input.
 
-<!-- demo-lab:start -->
-## Explore this project
+![Original ebook illustration](online_library@2x.png)
 
-[Project page & walkthrough](https://eforus-overseer.github.io/demo-lab/projects/text-word-counter/) — Try an interactive explanation and inspect the original source and results. Browser teaching examples are distinguished from trained models.
-<!-- demo-lab:end -->
+Run from this directory:
+
+```bash
+python3 TextCounter.py
+```
+
+The program writes `output.txt` in the current directory. Its original prefix-based matching and behavior are unchanged.
+
+- [Context Bloom, the modern agent skill](../README.md)
+- [Original repository snapshot](https://github.com/eforus-overseer/context-bloom/tree/legacy-word-counter)
+- [Interactive legacy counter](https://eforus-overseer.github.io/demo-lab/projects/text-word-counter/)
