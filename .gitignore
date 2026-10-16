@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+reports/
+.nltk_data/
+.token_cache/
+.DS_Store

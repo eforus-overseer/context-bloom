@@ -1,0 +1,10 @@
+{
+  "name": "context-bloom",
+  "version": "1.0.0",
+  "description": "Local context analysis, compaction advice and a growing terminal context indicator.",
+  "author": {"name": "eforus-overseer"},
+  "homepage": "https://github.com/eforus-overseer/context-bloom",
+  "repository": "https://github.com/eforus-overseer/context-bloom",
+  "license": "MIT",
+  "keywords": ["context", "compaction", "tokens", "nlp"]
+}

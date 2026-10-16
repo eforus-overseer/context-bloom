@@ -1,0 +1,5 @@
+{
+  "name": "context-bloom",
+  "owner": {"name": "eforus-overseer"},
+  "plugins": [{"name": "context-bloom", "source": "./", "description": "Local context analysis and compaction advice.", "version": "1.0.0"}]
+}

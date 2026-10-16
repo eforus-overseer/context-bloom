@@ -1,0 +1,9 @@
+[
+  {"role":"user","content":"Build an offline wildlife photo organizer. Keep original photos untouched and preserve capture dates. Do not upload images."},
+  {"role":"assistant","content":"We explored an offline wildlife photo organizer that groups wildlife photographs by capture date, animal and location. The first exploration considered photo folders, date grouping, animal labels, location labels, thumbnail previews and a local catalog. This was an early exploration; the selected design will be recorded separately."},
+  {"role":"tool","content":"Catalog scan completed: inspected photo folders, extracted capture dates, generated thumbnail previews and attached local animal labels. Catalog scan completed: inspected photo folders, extracted capture dates, generated thumbnail previews and attached local animal labels. Catalog scan completed: inspected photo folders, extracted capture dates, generated thumbnail previews and attached local animal labels. Full scan results are saved in artifacts/catalog-scan.json."},
+  {"role":"assistant","content":"The offline wildlife photo organizer exploration again considered photo folders, date grouping, animal labels, location labels, thumbnail previews and a local catalog. This repeated exploration walked through photo folders, date grouping, animal labels, location labels, thumbnail previews and the same local catalog. The original photos remain in their existing folders."},
+  {"role":"assistant","content":"Decision: keep a SQLite catalog next to the library and store thumbnails in a separate cache. Pending: verify timezone handling and capture dates."},
+  {"role":"user","content":"Keep working on capture date tests. Do not change the original photos or their filenames."},
+  {"role":"assistant","content":"Current task: verify timezone conversion against the original EXIF capture dates. The date parser tests are the next step; no photo writes are planned."}
+]
