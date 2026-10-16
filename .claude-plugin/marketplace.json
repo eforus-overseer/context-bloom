@@ -1,5 +1,17 @@
 {
   "name": "context-bloom",
-  "owner": {"name": "eforus-overseer"},
-  "plugins": [{"name": "context-bloom", "source": "./", "description": "Local context analysis and compaction advice.", "version": "1.0.0"}]
+  "owner": {
+    "name": "eforus-overseer"
+  },
+  "plugins": [
+    {
+      "name": "context-bloom",
+      "source": "./",
+      "description": "Local context analysis and compaction advice.",
+      "version": "1.0.0"
+    }
+  ],
+  "metadata": {
+    "description": "Context Bloom: local context analysis and compaction guidance for coding agents."
+  }
 }
