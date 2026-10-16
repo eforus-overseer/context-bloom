@@ -1,0 +1,4 @@
+interface:
+  display_name: "Context Bloom"
+  short_description: "Find what to condense and when to compact context"
+  default_prompt: "Use $context-bloom to review my context and prepare a compaction handoff."

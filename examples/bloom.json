@@ -1,0 +1,238 @@
+{
+  "schema_version": "1.0",
+  "name": "Context Bloom",
+  "tokenizer": {
+    "encoding": "cl100k_base",
+    "scope": "supplied text only; excludes host framing, hidden instructions, images and tools"
+  },
+  "counts": {
+    "raw_text_tokens": 286,
+    "normalized_text_tokens": 222,
+    "lexical_words": 235,
+    "lemmatized_terms": 235,
+    "content_terms": 183,
+    "unique_stems": 69
+  },
+  "top_stems": [
+    {
+      "term": "photo",
+      "count": 13
+    },
+    {
+      "term": "date",
+      "count": 12
+    },
+    {
+      "term": "label",
+      "count": 9
+    },
+    {
+      "term": "captur",
+      "count": 8
+    },
+    {
+      "term": "anim",
+      "count": 7
+    },
+    {
+      "term": "folder",
+      "count": 7
+    },
+    {
+      "term": "thumbnail",
+      "count": 7
+    },
+    {
+      "term": "catalog",
+      "count": 7
+    },
+    {
+      "term": "preview",
+      "count": 6
+    },
+    {
+      "term": "local",
+      "count": 6
+    },
+    {
+      "term": "explor",
+      "count": 5
+    },
+    {
+      "term": "wildlif",
+      "count": 4
+    }
+  ],
+  "context": {
+    "used": 144000,
+    "limit": 200000,
+    "percentage": 72.0,
+    "source": "user-supplied host usage",
+    "state": "prepare"
+  },
+  "policy": {
+    "prepare_at_percent": 65,
+    "compact_at_percent": 80,
+    "keep_recent": 2
+  },
+  "advice": "Prepare a handoff now; compact after the current coherent task completes.",
+  "blocks": [
+    {
+      "id": 1,
+      "location": "message 1",
+      "role": "user",
+      "text_tokens": 21,
+      "normalized_terms": 15,
+      "lexical_overlap": 0.0,
+      "protected": [
+        "instructions or user request",
+        "possible constraint or unfinished work"
+      ],
+      "candidate": false,
+      "score": 0,
+      "reasons": []
+    },
+    {
+      "id": 2,
+      "location": "message 2",
+      "role": "assistant",
+      "text_tokens": 56,
+      "normalized_terms": 33,
+      "lexical_overlap": 0.25,
+      "protected": [],
+      "candidate": true,
+      "score": 24.5,
+      "reasons": [
+        "older block outside protected recent context"
+      ]
+    },
+    {
+      "id": 3,
+      "location": "message 3",
+      "role": "tool",
+      "text_tokens": 75,
+      "normalized_terms": 53,
+      "lexical_overlap": 0.5,
+      "protected": [],
+      "candidate": true,
+      "score": 46.88,
+      "reasons": [
+        "older block outside protected recent context",
+        "tool output: preserve result and artifact path instead of full log"
+      ]
+    },
+    {
+      "id": 4,
+      "location": "message 4",
+      "role": "assistant",
+      "text_tokens": 61,
+      "normalized_terms": 38,
+      "lexical_overlap": 0.81,
+      "protected": [],
+      "candidate": true,
+      "score": 52.29,
+      "reasons": [
+        "older block outside protected recent context",
+        "high lexical overlap with earlier blocks"
+      ]
+    },
+    {
+      "id": 5,
+      "location": "message 5",
+      "role": "assistant",
+      "text_tokens": 27,
+      "normalized_terms": 16,
+      "lexical_overlap": 0.375,
+      "protected": [
+        "possible constraint or unfinished work"
+      ],
+      "candidate": false,
+      "score": 0,
+      "reasons": []
+    },
+    {
+      "id": 6,
+      "location": "message 6",
+      "role": "user",
+      "text_tokens": 17,
+      "normalized_terms": 10,
+      "lexical_overlap": 0.6,
+      "protected": [
+        "recent context",
+        "instructions or user request",
+        "possible constraint or unfinished work"
+      ],
+      "candidate": false,
+      "score": 0,
+      "reasons": []
+    },
+    {
+      "id": 7,
+      "location": "message 7",
+      "role": "assistant",
+      "text_tokens": 29,
+      "normalized_terms": 18,
+      "lexical_overlap": 0.471,
+      "protected": [
+        "recent context"
+      ],
+      "candidate": false,
+      "score": 0,
+      "reasons": []
+    }
+  ],
+  "candidates": [
+    {
+      "id": 4,
+      "location": "message 4",
+      "role": "assistant",
+      "text_tokens": 61,
+      "normalized_terms": 38,
+      "lexical_overlap": 0.81,
+      "protected": [],
+      "candidate": true,
+      "score": 52.29,
+      "reasons": [
+        "older block outside protected recent context",
+        "high lexical overlap with earlier blocks"
+      ]
+    },
+    {
+      "id": 3,
+      "location": "message 3",
+      "role": "tool",
+      "text_tokens": 75,
+      "normalized_terms": 53,
+      "lexical_overlap": 0.5,
+      "protected": [],
+      "candidate": true,
+      "score": 46.88,
+      "reasons": [
+        "older block outside protected recent context",
+        "tool output: preserve result and artifact path instead of full log"
+      ]
+    },
+    {
+      "id": 2,
+      "location": "message 2",
+      "role": "assistant",
+      "text_tokens": 56,
+      "normalized_terms": 33,
+      "lexical_overlap": 0.25,
+      "protected": [],
+      "candidate": true,
+      "score": 24.5,
+      "reasons": [
+        "older block outside protected recent context"
+      ]
+    }
+  ],
+  "limitations": [
+    "English lexical analysis; normalization is lossy and is never a replacement prompt.",
+    "Normalized token counts do not measure live context or guaranteed token savings.",
+    "Lexical overlap does not prove duplicate meaning; review each candidate before condensing.",
+    "Compaction timing thresholds are configurable heuristics, not provider limits.",
+    "No automatic compaction, transcript scanning, or remote API calls."
+  ],
+  "input_sha256": "7aae7b7a6b14402b6e977cd756a637e2eaa16dc7a8a80398d3a2596f9e68a5ea"
+}
