@@ -123,3 +123,11 @@ skills/context-bloom/.venv/bin/python -m unittest discover -s tests -v
 Tests cover real NLP transformations, cache-aware context usage, missing telemetry, preserved instructions, input protection, HTML escaping, offline execution, and non-destructive installation.
 
 Useful next contributions: multilingual normalization with explicit language models; evaluated semantic redundancy detection; documented session-export adapters; and a supported live Codex indicator when the host exposes an extension interface. [Method and design](docs/design.md) · [Contributing](CONTRIBUTING.md).
+
+
+<!-- codex-pixel-art -->
+## Pixel art
+
+![Pixel art for context-bloom](assets/pixel-art.svg)
+
+A small visual signature for this repository.
