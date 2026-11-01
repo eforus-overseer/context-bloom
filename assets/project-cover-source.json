@@ -1,10 +1,11 @@
 {
-  "title": "2016-366-248 The Sunflower Broadcast Network (29358806052)",
-  "author": "cogdogblog",
-  "license": "CC BY 2.0",
-  "license_url": "https://creativecommons.org/licenses/by/2.0",
-  "source_url": "https://commons.wikimedia.org/wiki/File:2016-366-248_The_Sunflower_Broadcast_Network_(29358806052).jpg",
-  "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/2016-366-248_The_Sunflower_Broadcast_Network_%2829358806052%29.jpg/1280px-2016-366-248_The_Sunflower_Broadcast_Network_%2829358806052%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-  "commons_file": "File:2016-366-248 The Sunflower Broadcast Network (29358806052).jpg",
-  "query": "flower information network"
+  "title": "OpenMoji sunflower",
+  "author": "OpenMoji contributors",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "source_url": "https://github.com/hfg-gmuend/openmoji/blob/master/color/618x618/1F33B.png",
+  "download_url": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/master/color/618x618/1F33B.png",
+  "commons_file": "1F33B",
+  "query": "flower information network",
+  "collection": "OpenMoji"
 }

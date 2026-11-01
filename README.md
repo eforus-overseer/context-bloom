@@ -130,4 +130,4 @@ Useful next contributions: multilingual normalization with explicit language mod
 
 ![Pixel-art cover for context-bloom](assets/project-cover.png)
 
-<sub>Pixel-art adaptation of [2016-366-248 The Sunflower Broadcast Network (29358806052)](https://commons.wikimedia.org/wiki/File:2016-366-248_The_Sunflower_Broadcast_Network_(29358806052).jpg) by cogdogblog, licensed [CC BY 2.0](https://creativecommons.org/licenses/by/2.0). Source: Wikimedia Commons.</sub>
+<sub>Pixel-art adaptation of [OpenMoji sunflower](https://github.com/hfg-gmuend/openmoji/blob/master/color/618x618/1F33B.png) by OpenMoji contributors, licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Source: OpenMoji.</sub>
