@@ -126,8 +126,8 @@ Useful next contributions: multilingual normalization with explicit language mod
 
 
 <!-- codex-pixel-art -->
-## Pixel art
+## Project visual
 
-![Pixel art for context-bloom](assets/pixel-art.svg)
+![Pixel-art cover for context-bloom](assets/project-cover.png)
 
-A small visual signature for this repository.
+<sub>Pixel-art adaptation of [2016-366-248 The Sunflower Broadcast Network (29358806052)](https://commons.wikimedia.org/wiki/File:2016-366-248_The_Sunflower_Broadcast_Network_(29358806052).jpg) by cogdogblog, licensed [CC BY 2.0](https://creativecommons.org/licenses/by/2.0). Source: Wikimedia Commons.</sub>
